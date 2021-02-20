@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Date Checker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+         <h1 id="title"></h1>
+
+         <p></p>
+        
+        <script>
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+            var yyyy = today.getFullYear();
+
+            today = mm + '/' + dd + '/' + yyyy;
+            document.getElementById("title").innerHTML = "Let's see if you are over 21. (Today is: " + mm + "/" + dd + "/" + yyyy + ")"
+        </script>
+
+        <h3>Please choose a date. Then press the button.</h3>
+        <input type="date" id="datepicker">
+        <button onclick="checkDate()" type="button">Over 21?</button>
+
+        <script>
+            function checkDate(){
+                var d = document.getElementById("datepicker").value;
+                alert(d);
+                var res = d.split("-");
+                var year = res[0];
+                var month = res[1];
+                var day = res[2];
+                checkComponents(year, month, day);
+            }
+            function checkComponents(y, m, d){
+                alert(y + " " + d + " " + m);
+                var current = new Date();
+                if((current.getFullYear() - y) > 21){
+                    alert("You are older than 21!");
+                }else if(current.getFullYear() == y){
+                    alert("You are 21!");
+                }else{
+                    alert("You are not 21 yet!");
+                }
+            }
+        </script>
+
+        
+    </body>
+
+</html>

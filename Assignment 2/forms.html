@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HTML Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Setup your account</h1>
+        <p style="color:gray;" >Make sure to use a valid email address, you'll need to verify it before you can send any campaigns.</p>
+
+        <form width="25vw">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email"><br>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"><br>
+
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company"><br>
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                <datalist id="country">
+                    <option value="us">United States of America</option>
+                    <option value="canada">Canada</option>
+                    <option value="china">China</option>
+                    <option value="uk">United Kingdom</option>
+                </datalist>
+                </select>
+                <br>
+
+                <label for="timezone">Timezone</label>
+                <select name="timezone" id="timezone">
+                    <datalist id="timezone">
+                            <option value="pac">(GMT -8:00) Pacific Time</option>
+                            <option value="mount">(GMT -7:00) Mountain Time</option>
+                            <option value="central">(GMT -6:00) Central Time</option>
+                            <option value="east">(GMT -5:00) Eastern Time</option>
+                    </datalist><br> 
+                </select>
+
+
+        </form>
+
+    </body>
+
+</html>

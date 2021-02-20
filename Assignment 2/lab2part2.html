@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <head>
+        <title>Number Generator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Press the button to generate a random number between 1-65!</h1>
+        <button onclick="generateNumber()" type="button">Generate</button>
+        <p id="number"></p>
+
+        <script>
+            function generateNumber(){
+                var number = Math.floor(Math.random() * 65); 
+                document.getElementById("number").innerHTML = "Number: " + number;
+                
+            }
+        </script>
+
+    </body>
+
+</html>

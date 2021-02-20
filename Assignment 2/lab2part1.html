@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <head>
+        <title>Number Between</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Enter a number to see if it is between 18-24!</h1>
+        <form width="50vw">
+            <label for="number">Number</label>
+            <input type="text" id="number" name="number" value="-1"><br>
+        </form>
+        <button onclick="isBetween()" type="button">Check Number!</button>
+
+
+        <script>
+            function isBetween(){
+                var number = document.getElementById("number").value;
+                if(number == -1){
+                    alert("Number is -1!");
+                }else if(number < 18){
+                    alert("Number is less than 18!");
+                }else if(number > 24){
+                    alert("Number is greater than 24!");
+                }else{
+                    alert("Number is between 18-24!");
+                }
+            }
+        </script>
+
+    </body>
+
+</html>

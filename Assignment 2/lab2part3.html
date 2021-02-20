@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <head>
+        <title>Number Guessing Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Guess a number between 0-65!</h1>
+        <form width="50vw">
+            <label for="number">Guess</label>
+            <input type="text" id="number" name="number"><br>
+        </form>
+        <button onclick="guessNumber()" type="button">Guess Number!</button>
+        <p style="display: none;" id="gameNumber">-1</p>
+        <!-- <p id="gameNumber">-1</p> -->
+        <h2>Guesses</h2>
+        <h3 id="guesses">3</h3>
+
+        <script>
+            random = Math.floor(Math.random() * 65); 
+            document.getElementById("gameNumber").innerHTML = Math.floor(Math.random() * 65); 
+        </script>
+
+        <script>
+            function guessNumber(){
+                var gameNumber = document.getElementById("gameNumber").innerHTML;
+                var guessedNumber = document.getElementById("number").value;
+                var guesses = document.getElementById("guesses").innerHTML;
+                updateGuesses(guesses, gameNumber, guessedNumber);
+                checkWin(gameNumber, guessedNumber);
+            }
+
+            function updateGuesses(g, gameNumber, guessedNumber){
+                if(g <= 0){
+                    alert("You lost! The secret number was: " + gameNumber);
+                    location.reload();
+                }else if(guesses == 1 && gameNumber != guessedNumber){
+                    alert("You lost! The secret number was: " + gameNumber);
+                    location.reload();
+                }
+                else{
+                    guesses = g-1;
+                    document.getElementById("guesses").innerHTML = guesses;
+                }
+            }
+
+            function checkWin(gameNumber, guessedNumber, guesses){
+                if(gameNumber == guessedNumber){
+                    alert("You win! Restarting game.");
+                    location.reload();
+                }else if(guesses == 1 && gameNumber != guessedNumber){
+                    alert("You lost! Restarting game.")
+                }
+                else{
+                    alert("Wrong! Try again!")
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>

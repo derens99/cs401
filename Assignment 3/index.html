@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Factorial Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Factorial Calculator</h1>
+        <form>
+            <label for="number">Enter number:</label><br>
+            <input type="text" id="number" name="number"><br>
+        </form>
+
+        <button onclick="getFactorial()" type="button">Calculate</button>
+        <p id="factorial"></p>
+
+        <script>
+            let calculateFactorial = (value) => {
+                if(value == 1 || value == 0){
+                    return 1;
+                }else{
+                    return value * calculateFactorial(value-1);
+                }
+            }
+
+            function getFactorial(){
+                let text = document.getElementById("number").value.trim();
+
+                if(isNaN(text) || text == "" || text == undefined){
+                    document.getElementById("factorial").innerHTML = "Please enter a number!";
+                }
+                else{
+                    let fact = calculateFactorial(text);
+                    document.getElementById("factorial").innerHTML = "Factorial: " + fact;
+                }
+                
+            }
+
+        </script>
+
+    </body>
+
+</html>
