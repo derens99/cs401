@@ -1,0 +1,34 @@
+#bluecircle {
+    background: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#redcircle {
+    background: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#greencircle {
+    background: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#orangecircle {
+    background: orange;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#yellowcircle {
+    background: yellow;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
