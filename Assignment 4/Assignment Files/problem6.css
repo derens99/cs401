@@ -1,0 +1,13 @@
+.blue{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.yellow{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}

@@ -1,0 +1,17 @@
+@font-face{
+    font-family: noto;
+    src: url(fonts/NotoSansJP-Regular.otf)
+}
+
+@font-face{
+    font-family: bebas;
+    src: url(fonts/BebasNeue-Regular.ttf)
+}
+
+.NotoSans{
+    font-family: noto, sans-serif;
+}
+
+.Bebas{
+    font-family: bebas, sans-serif;
+}

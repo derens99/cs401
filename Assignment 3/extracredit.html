@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Deren Singh | DOM Loader</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h1>DOM Loader</h1>
+        <p>Extra Credit to check when DOM is fully loaded or ready.</p>
+        <p id="domloader"></p>
+        
+
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                console.info("DOMContentLoaded::completed");
+                // document.getElementById("domloader").innerHTML = "Has Loaded: True";
+                document.getElementById("domloader").innerHTML = "2021 &copy Singh. All rights reserved."
+            });
+
+        </script>
+
+    </body>
+
+</html>
