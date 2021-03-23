@@ -1,0 +1,12 @@
+.parent{
+    border: 4px dotted purple;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 2vw;
+    vertical-align: inherit;
+}

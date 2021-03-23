@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="p4.css">
+        <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+        <p>Paragraph 9</p>
+        <p>Paragraph 10</p>
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function(){
+                $("p").click(function(e){
+                    var id = $(this).attr("id");
+                    if(id == undefined || id == ""){
+                        $(this).prop("id", "bordered");
+                    }else{
+                        $(this).prop("id", "");
+                    }
+                    
+            });
+            });
+
+            // $(document).ready(function(){
+            //     $("p").click(function(e){
+            //         var id = $(this).attr("id");
+            //         if(id == undefined || id == ""){
+            //             $(this).prop("id", "bordered");
+            //         }else{
+            //             $(this).prop("id", "");
+            //         }
+                    
+            // });
+            // });
+            
+        </script>
+
+    </body>
+</html>

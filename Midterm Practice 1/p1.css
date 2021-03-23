@@ -1,13 +1,43 @@
-#circle {
+.circle {
     width: 100px;
-    height: 100px;
-    background: red;
-    /* border-radius: 50% */
+    height: 100px;    
+    border-radius: 50%;
+    overflow: hidden;
+    /* transform: rotate(45deg); */
 }
 
-#left{
-    background: green;
-    /* display: inline; */
+.orange{
+    background: orange;
+    float: left;
     width: 20%;
-    height: 100px;
+    height: 100%;
+    flex-wrap: ;
+}
+
+#yellow{
+    background: yellow;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+#blue{
+    background: blue;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+#green{
+    background: green;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+#darkred{
+    background: darkred;
+    float: left;
+    width: 20%;
+    height: 100%;
 }

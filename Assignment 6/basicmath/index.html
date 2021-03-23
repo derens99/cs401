@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/basicmath.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+    <script src="modules/basicmath.js"></script>
+
+    <title>Basic Math</title>
+  </head>
+  <body>
+    <header>
+        <h1>Please choose</h1>
+        <div>
+            <img id="addBtn" class="action" src="./images/addition_512.png"/>
+            <img id="subBtn" class="action" src="./images/subtractiob.jpg"/>
+            <img id="divBtn" class="action" src="./images/division_512.png"/>
+            <img id="multBtn" class="action" src="./images/multiply.png"/>
+            <img id="modBtn" class="action" src="./images/modulus-512.png"/>
+        </div>
+    </header>
+    <main>
+        <section class="tile" id="addition_section" style="display:none">
+            <h1 class="lg">33 + 7 = 
+                <!-- See http://www.menucool.com/tooltip/css-tooltip -->
+                <div id="addition_tile" answer="40" style="border-bottom: 0" class="btn btn-primary tooltip">?
+                    <div class="top">
+                        <h3 id="addTileAnswer">Click to see the answer!</h3><i></i>
+                    </div>
+                </div>
+            </h1>
+        </section>
+        <section class="tile" id="subtraction_section" style="display: none;" title="Subtraction">
+            <h1 class="lg">10-1 = 
+                <div id="subtraction_tile" answer="9" style="border-bottom: 0;" class="btn btn-primary tooltip">?
+                    <div class="top">
+                        <h3 id="subTileAnswer">Click to see the answer!</h3><i></i>
+                    </div>
+                </div>
+
+            </h1>
+        </section>
+        <section class="tile" id="div_section" style="display: none;" title="Division">
+            <h1 class="lg"> 8/4 =
+                <div id="div_tile" answer="2" style="border-bottom: 0;" class="btn btn-primary tooltip">?
+                    <div class="top">
+                        <h3 id="divAnswer">Click to see the answer!</h3>
+                    </div>
+                </div>
+            </h1>
+        </section>
+        <section class="tile" id="mult_section" style="display: none;" title="Multiplication">
+            <h1 class="lg"> 3*5 =
+                <div id="mult_tile" answer="15" style="border-bottom: 0;" class="btn btn-primary tooltip">?
+                    <div class="top">
+                        <h3 id="multAnswer">Click to see the answer!</h3>
+                    </div>
+                </div>
+            </h1>
+        </section>
+        <section class="tile" id="mod_section" style="display: none;" title="Modulus">
+            <h1 class="lg"> 12 % 8 =
+                <div id="mod_tile" answer="4" style="border-bottom: 0;" class="btn btn-primary tooltip">?
+                    <div class="top">
+                        <h3 id="modAnswer">Click to see the answer!</h3>
+                    </div>
+                </div>
+            </h1>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+   </body>
+</html>
